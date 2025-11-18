@@ -45,8 +45,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Throttle function to limit execution frequency
+function throttle(func, wait) {
+    let timeout;
+    let lastRan;
+    return function executedFunction(...args) {
+        if (!lastRan) {
+            func.apply(this, args);
+            lastRan = Date.now();
+        } else {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                if (Date.now() - lastRan >= wait) {
+                    func.apply(this, args);
+                    lastRan = Date.now();
+                }
+            }, wait - (Date.now() - lastRan));
+        }
+    };
+}
+
 // Active Navigation Link on Scroll
-window.addEventListener('scroll', () => {
+const handleScroll = () => {
     let current = '';
     const sections = document.querySelectorAll('section');
     
@@ -67,7 +87,17 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
-});
+    
+    // Update navbar box shadow based on scroll position
+    const navbar = document.querySelector('header');
+    if (window.scrollY > 100) {
+        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+    } else {
+        navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
+    }
+};
+
+window.addEventListener('scroll', throttle(handleScroll, 100));
 
 // Form Submission Handler
 const contactForm = document.getElementById('contactForm');
@@ -77,13 +107,16 @@ contactForm.addEventListener('submit', (e) => {
     
     // Get form data
     const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        message: document.getElementById('message').value.trim()
     };
     
+    // Sanitize name to prevent XSS
+    const sanitizedName = formData.name.replace(/[<>]/g, '');
+    
     // Show success message (in a real application, this would send data to a server)
-    alert(`Thank you for your message, ${formData.name}! I'll get back to you soon.`);
+    alert(`Thank you for your message, ${sanitizedName}! I'll get back to you soon.`);
     
     // Reset form
     contactForm.reset();
@@ -110,16 +143,6 @@ document.querySelectorAll('.skill-card, .project-card').forEach(card => {
     card.style.transform = 'translateY(30px)';
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(card);
-});
-
-// Add scroll-based navbar background
-const navbar = document.querySelector('header');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
-    } else {
-        navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
-    }
 });
 
 // Prevent default behavior for demo links
