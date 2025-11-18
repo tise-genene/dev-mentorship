@@ -113,7 +113,7 @@ contactForm.addEventListener('submit', (e) => {
     };
     
     // Sanitize name to prevent XSS
-    const sanitizedName = formData.name.replace(/[<>]/g, '');
+    const sanitizedName = DOMPurify.sanitize(formData.name);
     
     // Show success message (in a real application, this would send data to a server)
     alert(`Thank you for your message, ${sanitizedName}! I'll get back to you soon.`);
