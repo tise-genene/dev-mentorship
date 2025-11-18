@@ -282,11 +282,14 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 John Doe. All rights reserved.</p>
+            <p>&copy; <span id="copyright-year"></span> John Doe. All rights reserved.</p>
             <p>Built with ❤️ using HTML, CSS & JavaScript</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
