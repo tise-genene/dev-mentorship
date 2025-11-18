@@ -152,4 +152,3 @@ document.querySelectorAll('a[href="#"]').forEach(link => {
     });
 });
 
-console.log('Portfolio website loaded successfully!');
