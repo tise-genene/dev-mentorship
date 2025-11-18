@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio Website - Showcasing my skills, projects, and experience">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">Portfolio</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hello, I'm <span class="highlight">John Doe</span></h1>
+            <p class="hero-subtitle">Full Stack Developer | Creative Thinker | Problem Solver</p>
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-placeholder">
+                        <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="75" cy="75" r="75" fill="#667eea"/>
+                            <circle cx="75" cy="60" r="25" fill="white"/>
+                            <path d="M30 130c0-24.853 20.147-45 45-45s45 20.147 45 45" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a passionate web developer with expertise in creating modern, responsive websites and web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+                    <p>With a strong foundation in both front-end and back-end technologies, I strive to deliver exceptional user experiences while maintaining clean, efficient code.</p>
+                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="50" height="50" rx="10" fill="#E34F26"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="16" font-weight="bold">HTML</text>
+                        </svg>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup and modern web standards</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="50" height="50" rx="10" fill="#1572B6"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="16" font-weight="bold">CSS</text>
+                        </svg>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Responsive design, Flexbox, Grid, and animations</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="50" height="50" rx="10" fill="#F7DF1E"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#323330" font-size="16" font-weight="bold">JS</text>
+                        </svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM manipulation, and async programming</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="50" height="50" rx="10" fill="#61DAFB"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#20232a" font-size="14" font-weight="bold">React</text>
+                        </svg>
+                    </div>
+                    <h3>React</h3>
+                    <p>Component-based architecture and hooks</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="50" height="50" rx="10" fill="#68A063"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Node</text>
+                        </svg>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Server-side JavaScript and RESTful APIs</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="50" height="50" rx="10" fill="#F05032"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="16" font-weight="bold">Git</text>
+                        </svg>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control and collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="30" width="80" height="50" rx="5" fill="white" opacity="0.2"/>
+                                <rect x="20" y="40" width="60" height="3" fill="white" opacity="0.6"/>
+                                <rect x="20" y="50" width="50" height="3" fill="white" opacity="0.6"/>
+                                <rect x="20" y="60" width="40" height="3" fill="white" opacity="0.6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully responsive e-commerce platform with shopping cart, product filters, and checkout functionality.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">Live Demo</a>
+                            <a href="#" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="40" r="15" fill="white" opacity="0.3"/>
+                                <rect x="35" y="60" width="30" height="25" rx="3" fill="white" opacity="0.3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>Real-time weather application that fetches data from OpenWeather API and displays current conditions and forecasts.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">API</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">Live Demo</a>
+                            <a href="#" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="20" y="25" width="60" height="10" rx="2" fill="white" opacity="0.3"/>
+                                <rect x="20" y="45" width="60" height="10" rx="2" fill="white" opacity="0.3"/>
+                                <rect x="20" y="65" width="60" height="10" rx="2" fill="white" opacity="0.3"/>
+                                <circle cx="30" cy="30" r="3" fill="white" opacity="0.6"/>
+                                <circle cx="30" cy="50" r="3" fill="white" opacity="0.6"/>
+                                <circle cx="30" cy="70" r="3" fill="white" opacity="0.6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager</h3>
+                        <p>Full-stack task management application with CRUD operations, user authentication, and MongoDB database.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary">Live Demo</a>
+                            <a href="#" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8L10.89 13.26C11.54 13.67 12.46 13.67 13.11 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>john.doe@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 5C3 3.89543 3.89543 3 5 3H9.27924C9.70967 3 10.0957 3.27543 10.2478 3.68377L11.7498 7.68377C11.9292 8.15543 11.7522 8.68377 11.3302 8.94377L9.43024 10.144C10.2652 11.893 11.607 13.2348 13.356 14.0698L14.5562 12.1698C14.8162 11.7478 15.3446 11.5708 15.8162 11.7502L19.8162 13.2522C20.2246 13.4043 20.5 13.7903 20.5 14.2208V18.5C20.5 19.6046 19.6046 20.5 18.5 20.5H17C9.26801 20.5 3 14.232 3 6.5V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                            </svg>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C18.2072 22.5807 20.2772 21.0497 21.7437 19.0074C23.2101 16.965 23.9993 14.5143 24 12C24 5.37 18.63 0 12 0Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.396 7.179 20 6.988 20 12.241V19Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
+            <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
