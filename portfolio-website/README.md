@@ -48,12 +48,12 @@ portfolio-website/
 
 ## Customization
 
-To personalize this portfolio:
+To further personalize this portfolio:
 
 1. **Update Personal Information**:
-   - Replace "John Doe" with your name in `index.html`
-   - Update the hero subtitle with your title/role
-   - Modify the About section content
+   - The portfolio is currently set up for "Degife T."
+   - Update the hero subtitle with your specific title/role
+   - Modify the About section content with your personal details
 
 2. **Add Your Projects**:
    - Edit the Projects section in `index.html`
