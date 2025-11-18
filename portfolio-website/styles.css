@@ -146,9 +146,12 @@ header {
 }
 
 .highlight {
+    color: var(--accent-color); /* Fallback for unsupported browsers */
     background: linear-gradient(90deg, var(--accent-color), #f5576c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -o-background-clip: text;
     background-clip: text;
 }
 
