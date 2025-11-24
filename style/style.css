@@ -45,7 +45,7 @@ body.dark-mode {
 
 body {
   scroll-behavior: smooth;
-  overflow: none;
+  overflow: hidden;
   background: var(--bg);
 }
 header {
