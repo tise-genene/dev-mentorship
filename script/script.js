@@ -33,7 +33,7 @@ if(charIndex < texts[index].length) {
   setTimeout(eraseEffect, 1500);
 }
 }
-//function to eerrase texts//
+//function to erase texts//
 
 function eraseEffect() {
 if(charIndex > 0) {
