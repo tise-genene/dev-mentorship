@@ -87,7 +87,7 @@ header nav ul li a {
 header nav ul li a:hover {
   color: var(--bg);
 }
-/*header bars etion style starts*/
+/*header bars section style starts*/
 header .bars {
   display: none;
 }
