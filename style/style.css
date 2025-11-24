@@ -117,7 +117,7 @@ header .bars i {
   z-index: 999;
 }
 .themeToggle i:hover {
-  background: var(--priamary);
+  background: var(--primary);
   color: var(--text);
   border: 0.5px solid var(--bg);
 }
