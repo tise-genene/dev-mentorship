@@ -69,6 +69,6 @@ barHide.classList.add("fa-bars");
 //date  todays//
 
 const d = new Date();
-const year = d.getMonth;
-document.getElementById("date").innerText = d;
+const year = d.getFullYear();
+document.getElementById("date").innerText = year;
 
