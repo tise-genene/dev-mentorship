@@ -6,16 +6,16 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-html::-webkit-scrollbar-track{
-width: 12px;
-background: var(--secondary);
+html::-webkit-scrollbar-track {
+  width: 12px;
+  background: var(--secondary);
 }
-html::-webkit-scrollbar-thumb{
-width: 6px;
-background: var(--primary);
+html::-webkit-scrollbar-thumb {
+  width: 6px;
+  background: var(--primary);
 }
-html::-webkit-scrollbar{
-width: 8px;
+html::-webkit-scrollbar {
+  width: 8px;
 }
 /* #3b82f6 */
 :root {
@@ -28,7 +28,7 @@ width: 8px;
 }
 /* #0f1f2a */
 body.dark-mode {
-transition: all .9s ease-in-out;
+  transition: all 0.9s ease-in-out;
   --bg: #123;
   --text: #f9fafb;
   --secondary: #fe45;
@@ -46,9 +46,10 @@ transition: all .9s ease-in-out;
 
 body {
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
+  /* allow vertical scrolling; previously `overflow: hidden` prevented page scroll */
   background: var(--bg);
-transition: all .9s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 header {
   display: flex;
@@ -170,7 +171,7 @@ header .bars i {
   width: 380px;
   height: 380px;
   object-fit: cover;
-border-radius: 50px;
+  border-radius: 50px;
 }
 
 .hero .hero-img a button {
@@ -239,8 +240,8 @@ border-radius: 50px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.9);
 }
 .about-img img {
-animation: rotateImg 2s infinite alternate ease-in-out;
-transition: all 0.9s ease;
+  animation: rotateImg 2s infinite alternate ease-in-out;
+  transition: all 0.9s ease;
   width: 280px;
   height: 280px;
   border-radius: 20px;
@@ -248,17 +249,16 @@ transition: all 0.9s ease;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 @keyframes rotateImg {
-0%{
-transform: rotate(3deg);
-}
-100%{
-transform: rotate(-3deg);
-}
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
 }
 
-.about-img img:hover{
-transform: scale(1.05);
-
+.about-img img:hover {
+  transform: scale(1.05);
 }
 .about-text {
   max-width: 550px;
@@ -270,7 +270,7 @@ transform: scale(1.05);
   color: var(--text);
 }
 .about-text p {
-font-family: serif;
+  font-family: serif;
   font-weight: 500;
   flex-wrap: nowrap;
   line-height: 1.7;
@@ -313,13 +313,14 @@ font-family: serif;
 
 /*skill animation starts*/
 
-.mySpecial{
-display: grid; grid-template-columns: 2fr 1fr;
-grid-column: repeat(auto-fit, minmax(160px, 1fr));
+.mySpecial {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column: repeat(auto-fit, minmax(160px, 1fr));
 }
 .myskills {
   padding: 60px 10px;
-position: relative;
+  position: relative;
 }
 .my-skills h3 {
   text-align: center;
@@ -327,7 +328,8 @@ position: relative;
   font-size: 24px;
   margin-bottom: 18px;
 }
-.lang-name, .skill-info {
+.lang-name,
+.skill-info {
   max-width: 580px;
   align-items: center;
   justify-content: center;
@@ -339,8 +341,8 @@ position: relative;
   box-shadow: var(--shadow);
   border: 1px solid var(--secondary);
 }
-.lang-name{
-margin-top: 15px;
+.lang-name {
+  margin-top: 15px;
 }
 
 .lang-name span {
@@ -348,11 +350,10 @@ margin-top: 15px;
   color: var(--primary);
   font-weight: 600;
   margin: 0 25px;
-background: #134;
-padding: 5px;
-border-radius: 12px;
+  background: #134;
+  padding: 5px;
+  border-radius: 12px;
   animation: slideleft 12s infinite linear;
-
 }
 .skill-info i {
   color: var(--primary);
