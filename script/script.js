@@ -37,7 +37,7 @@ function typeEffect() {
     setTimeout(eraseEffect, 1500);
   }
 }
-//function to eerrase texts//
+//function to erase texts//
 
 function eraseEffect() {
   if (charIndex > 0) {
@@ -70,5 +70,6 @@ bar.addEventListener("click", () => {
 //date  todays//
 
 const d = new Date();
-const year = d.getMonth;
-document.getElementById("date").innerText = d;
+const year = d.getFullYear();
+document.getElementById("date").innerText = year;
+
