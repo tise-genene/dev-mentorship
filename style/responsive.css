@@ -82,7 +82,7 @@ grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 
-.skill-info{
+ .lang-name, .skill-info{
 max-width: 380px;
 padding: 8px 4px;
 }
@@ -91,6 +91,11 @@ font-size: 20px;
 flex-wrap: nowrap;
 }
 
+
+ 
+ .lang-name span {
+  font-size: 8px;
+}
 
 /*contact section*/
 .contact-container {
@@ -147,10 +152,14 @@ grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 /*animating skill section*/
-.skill-info{
+.lang-name, .skill-info{
 max-width: 380px;
 padding: 8px 4px;
 }
+.lang-name span {
+  font-size: 8px;
+}
+
 .skill-info i{
 flex-wrap: nowrap;
 font-size: 17px;
@@ -189,8 +198,5 @@ flex-direction: column;
 text-align: center;
 }
 
-.skill-info i {
-  
-}
 
 }
