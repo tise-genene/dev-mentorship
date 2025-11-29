@@ -28,6 +28,7 @@ width: 8px;
 }
 /* #0f1f2a */
 body.dark-mode {
+transition: all .9s ease-in-out;
   --bg: #123;
   --text: #f9fafb;
   --secondary: #fe45;
@@ -47,6 +48,7 @@ body {
   scroll-behavior: smooth;
   overflow: hidden;
   background: var(--bg);
+transition: all .9s ease-in-out;
 }
 header {
   display: flex;
@@ -237,11 +239,26 @@ border-radius: 50px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.9);
 }
 .about-img img {
+animation: rotateImg 2s infinite alternate ease-in-out;
+transition: all 0.9s ease;
   width: 280px;
   height: 280px;
   border-radius: 20px;
   object-fit: cover;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+@keyframes rotateImg {
+0%{
+transform: rotate(3deg);
+}
+100%{
+transform: rotate(-3deg);
+}
+}
+
+.about-img img:hover{
+transform: scale(1.05);
+
 }
 .about-text {
   max-width: 550px;
@@ -253,6 +270,7 @@ border-radius: 50px;
   color: var(--text);
 }
 .about-text p {
+font-family: serif;
   font-weight: 500;
   flex-wrap: nowrap;
   line-height: 1.7;
@@ -309,7 +327,7 @@ position: relative;
   font-size: 24px;
   margin-bottom: 18px;
 }
-.skill-info {
+.lang-name, .skill-info {
   max-width: 580px;
   align-items: center;
   justify-content: center;
@@ -320,6 +338,21 @@ position: relative;
   position: relative;
   box-shadow: var(--shadow);
   border: 1px solid var(--secondary);
+}
+.lang-name{
+margin-top: 15px;
+}
+
+.lang-name span {
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0 25px;
+background: #134;
+padding: 5px;
+border-radius: 12px;
+  animation: slideleft 12s infinite linear;
+
 }
 .skill-info i {
   color: var(--primary);
@@ -344,6 +377,17 @@ position: relative;
   }
 }
 
+@keyframes slideleft {
+  0% {
+    transform: translateX(300px);
+  }
+  50% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
 /* //special skill// */
 
 /*skill section ends*/

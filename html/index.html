@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>D-Portfolio</title>
-    <link rel="stylesheet" href="/style/style.css" />
-    <link rel="stylesheet" href="/style/responsive.css" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D-Portfolio</title>
+  <link rel="stylesheet" href="/style/style.css" />
+  <link rel="stylesheet" href="/style/responsive.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/simple-icons@latest/font/simple-icons.min.css"
-    />
-  </head>
-  <body>
-    <header id="header">
-      <div class="logo">
-        <h3><span>D</span>egife</h3>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@latest/font/simple-icons.min.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="logo">
+      <h3><span>D</span>egife</h3>
+    </div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="bars" id="bar">
+      <i class="fas fa-bars" id="barTimesBtn"></i>
+    </div>
+  </header>
+  <div>
+    <h3 class="themeToggle">
+      <i class="fas fa-sun"></i>
+    </h3>
+  </div>
+  <!--hero section style starts-->
+  <section class="hero" id="hero" data-aos="fade-up" data-aos-offset="200" data-aos-delay="300"
+    data-aos-duration="1000">
+    <div class="hero-container">
+      <div class="hero-img">
+        <img src="/image/port3.jpg" alt="" />
+        <a href="#about"><button>Download cv</button></a>
       </div>
-      <nav id="navbar">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
 
-      <div class="bars" id="bar">
-        <i class="fas fa-bars" id="barTimesBtn"></i>
+      <div class="hero-text">
+        <h1><span>Hey, there</span> <strong>I'm Degife Tise</strong></h1>
+        <h3>I'm a <span id="typing-text"></span></h3>
       </div>
-    </header>
-    <div>
-      <h3 class="themeToggle">
-        <i class="fas fa-sun"></i>
-      </h3>
     </div>
     <!--hero section style starts-->
     <section
@@ -68,27 +75,14 @@
           <h3>I'm a <span id="typing-text"></span></h3>
         </div>
       </div>
-      <div class="link">
-        <h1>Get ontouch me</h1>
-        <div class="icon">
-          <a href=""><i class="fab fa-linkedin"></i></a>
-          <a href=""><i class="fab fa-github"></i></a>
-          <a href=""><i class="fab fa-twitter"></i></a>
-          <a href=""><i class="fab fa-google"></i></a>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="about" id="about">
-      <div class="about-container">
-        <div
-          class="about-img"
-          data-aos="zoom-in-up"
-          data-aos-duration="300"
-          data-aos-delay="300"
-        >
-          <img src="/image/degife.jpg" alt="" />
-        </div>
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-img" data-aos="zoom-in-up" data-aos-duration="300" data-aos-delay="300">
+        <img src="/image/degife.jpg" alt="" />
+      </div>
 
         <div class="about-text">
           <h2>About Me</h2>
@@ -123,134 +117,104 @@
             data-aos-delay="200"
             data-aos-duration="800">Hire Me</a>
         </div>
-      </div>
-    </section>
-
-    <!--anmating skill section starts-->
-
-    <div class="my-skills">
-      <h3>My Skills</h3>
-      <div class="skill-info">
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3-alt"></i>
-        <i class="fa-brands fa-js"></i>
-        <i class="fa-brands fa-react"></i>
-        <i class="fab fa-bootstrap"></i>
-        <i class="fa-brands fa-php"></i>
-        <i class="fa-brands fa-mysql"></i>
+        <a href="#projects" class="about-btn" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">View My
+          work</a>
+        <a href="" class="get-me" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Hire Me</a>
       </div>
     </div>
+  </section>
 
-    <!--animating skill bar section ends-->
+  <!--animating skill section starts-->
 
-    <!--projects sections-->
-    <section id="projects" class="projects sectio-pad">
-      <h2>My Works</h2>
-      <h2>some of myworks</h2>
-      <div class="project-container">
-        <div class="grid-container">
-          <div
-            class="projects-card"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="100"
-          >
-            <img src="/image/click.jpg" alt="pro1" />
-            <h3>projects name</h3>
-            <p>projects details</p>
+  <div class="my-skills">
+    <h3>My Skills</h3>
+    <div class="skill-info">
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-js"></i>
+      <i class="fa-brands fa-react"></i>
+      <i class="fab fa-bootstrap"></i>
+      <i class="fa-brands fa-php"></i>
+      <i class="fa-brands fa-mysql"></i>
+    </div>
 
-            <div class="link">
-              <i class="fab fa-github"></i>
-              <a href="#">Liveview</a>
-            </div>
+    <div class="lang-name">
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>PHP</span>
+      <span>MySQL</span>
+    </div>
+  </div>
+
+  <!--animating skill bar section ends-->
+
+  <!--projects sections-->
+  <section id="projects" class="projects sectio-pad">
+    <h2>My Works</h2>
+    <h2>some of my works</h2>
+    <div class="project-container">
+      <div class="grid-container">
+        <div class="projects-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <img src="/image/click.jpg" alt="pro1" />
+          <h3>projects name</h3>
+          <p>projects details</p>
+
+          <div class="link">
+            <i class="fab fa-github"></i>
+            <a href="#">Live view</a>
           </div>
+        </div>
 
-          <div
-            class="projects-card"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="100"
-          >
-            <img src="/image/click.jpg" alt="pro1" />
-            <h3>projects name</h3>
-            <p>projects details</p>
+        <div class="projects-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <img src="/image/click.jpg" alt="pro1" />
+          <h3>projects name</h3>
+          <p>projects details</p>
 
-            <div class="link">
-              <i class="fab fa-github"></i>
-              <a href="#">Liveview</a>
-            </div>
+          <div class="link">
+            <i class="fab fa-github"></i>
+            <a href="#">Live view</a>
           </div>
+        </div>
 
-          <div
-            class="projects-card"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="100"
-          >
-            <img src="/image/project1.png" alt="pro1" />
-            <h3>projects name</h3>
-            <p>projects details</p>
-            <p>css,php,javascript,MYSQL</p>
-            <div class="link">
-              <i class="fab fa-github"></i>
-              <a href="#">Live view</a>
-            </div>
+        <div class="projects-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <img src="/image/project1.png" alt="pro1" />
+          <h3>projects name</h3>
+          <p>projects details</p>
+          <p>css,php,javascript,MYSQL</p>
+          <div class="link">
+            <i class="fab fa-github"></i>
+            <a href="#">Live view</a>
           </div>
-          <div
-            class="projects-card"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="100"
-          >
-            <img src="/image/click.jpg" alt="pro1" />
-            <h3>projects name</h3>
-            <p>projects details</p>
-            <div class="link">
-              <i class="fab fa-github"></i>
-              <a href="#">Liveview</a>
-            </div>
+        </div>
+        <div class="projects-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <img src="/image/click.jpg" alt="pro1" />
+          <h3>projects name</h3>
+          <p>projects details</p>
+          <div class="link">
+            <i class="fab fa-github"></i>
+            <a href="#">Live view</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--projects section ends-->
+  <!--projects section ends-->
 
-    <!--service section starts-->
-    <section class="services" id="services">
-      <h2 class="services-title">Services</h2>
-      <p class="service-subtitle">What I Offer!</p>
+  <!--service section starts-->
+  <section class="services" id="services">
+    <h2 class="services-title">Services</h2>
+    <p class="service-subtitle">What I Offer!</p>
 
-      <div class="service-grid">
-        <div
-          class="services-card"
-          data-aos="slide-up"
-          data-aos-offset="150"
-          data-aos-duration="800"
-          data-aos-delay="100"
-        >
-          <i class="fas fa-code"></i>
-          <h3>Web Development</h3>
-          <p>
-            I build fast, responsive, and modern websites using
-            HTML,CSS,JavaScript, and React.
-          </p>
-        </div>
-
-        <div
-          class="services-card"
-          data-aos="slide-up"
-          data-aos-offset="150"
-          data-aos-duration="800"
-          data-aos-delay="200"
-        >
-          <i class="fas fa-paintbrush"></i>
-          <h3>UI / UX Design.</h3>
-          <p>
-            Clean, user-friendly interfaces design for websites and mobile
-            applications
-          </p>
-        </div>
+    <div class="service-grid">
+      <div class="services-card" data-aos="slide-up" data-aos-offset="150" data-aos-duration="800" data-aos-delay="100">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>
+          I build fast, responsive, and modern websites using
+          HTML,CSS,JavaScript, and React.
+        </p>
+      </div>
 
         <div
           class="services-card"
@@ -267,156 +231,115 @@
           </p>
         </div>
 
-        <div
-          class="services-card"
-          data-aos="slide-up"
-          data-aos-offset="150"
-          data-aos-duration="800"
-          data-aos-delay="400"
-        >
-          <i class="fas fa-server"></i>
-          <h3>Backend Development</h3>
-          <p>
-            PHP, MYSQL database, authentication, dashboards, and API
-            development.
-          </p>
-        </div>
+      <div class="services-card" data-aos="slide-up" data-aos-offset="150" data-aos-duration="800" data-aos-delay="300">
+        <i class="fas fa-cart-shopping"></i>
+        <h3>E-commerce.</h3>
+        <p>
+          Product pages, Add-to-cart Systems, and full online shopping
+          functionality
+        </p>
       </div>
-    </section>
-    <!--contact section starts-->
-    <section class="contact" id="contact">
-      <h2>contact me</h2>
 
-      <div class="contact-container">
-        <div class="contact-info">
-          <h3>Let's Talk</h3>
-          <p>
-            If you have any projects or want to hire me, feel free to contact
-            me.
-          </p>
+      <div class="services-card" data-aos="slide-up" data-aos-offset="150" data-aos-duration="800" data-aos-delay="400">
+        <i class="fas fa-server"></i>
+        <h3>Backend Development</h3>
+        <p>
+          PHP, MYSQL database, authentication, dashboards, and API
+          development.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--contact section starts-->
+  <section class="contact" id="contact">
+    <h2>contact me</h2>
 
-          <div
-            class="info-link"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p>degifetise09@gmail.com</p>
-            </div>
-          </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Let's Talk</h3>
+        <p>
+          If you have any projects or want to hire me, feel free to contact
+          me.
+        </p>
 
-          <div
-            class="info-link"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1300"
-          >
-            <i class="fas fa-phone"></i>
-            <div>
-              <h4>Phone</h4>
-              <p>+251-924-275434</p>
-            </div>
-          </div>
-
-          <div
-            class="info-link"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1600"
-          >
-            <i class="fas fa-location-dot"></i>
-            <div>
-              <h4>Location</h4>
-              <p>Addis Ababa, Ethiopia</p>
-            </div>
+        <div class="info-link" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>degifetise09@gmail.com</p>
           </div>
         </div>
 
-        <form action="" class="contact-form">
-          <h3>Drop message here.</h3>
-          <div class="input-group">
-            <input
-              type="text"
-              placeholder="You Name"
-              required
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="900"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              required
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="1200"
-            />
+        <div class="info-link" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1300">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <p>+251-924-275434</p>
           </div>
-          <input
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1500"
-            type="text"
-            placeholder="Subject"
-            class="full-input"
-            required
-          />
-          <textarea
-            placeholder="Message..."
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1800"
-          ></textarea>
-          <button
-            type="submit"
-            class="subBtn"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="2100"
-          >
-            Send Message
-          </button>
-        </form>
-      </div>
-    </section>
+        </div>
 
-    <!--footer section starts here-->
-    <footer class="footer">
-      <div class="footer-container">
-        <h2>DegifeT.</h2>
-
-        <ul id="footer-navbar">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <!--social links-->
-
-        <div class="footer-social">
-          <a href="#"><i class="fab fa-github"></i><span>Github</span></a>
-          <a href="#"><i class="fab fa-linkedin"></i><span>Linkedin</span></a>
-          <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-          <a href="#"><i class="fab fa-instagram"></i><span>instagram</span></a>
+        <div class="info-link" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1600">
+          <i class="fas fa-location-dot"></i>
+          <div>
+            <h4>Location</h4>
+            <p>Addis Ababa, Ethiopia</p>
+          </div>
         </div>
       </div>
 
-      <p class="footer-copy">
-        &copy; <span id="date"></span> DegifeT. All Rights Reserved.
-      </p>
-    </footer>
+      <form action="" class="contact-form">
+        <h3>Drop message here.</h3>
+        <div class="input-group">
+          <input type="text" placeholder="You Name" required data-aos="fade-up" data-aos-delay="200"
+            data-aos-duration="900" />
+          <input type="email" placeholder="Your Email" required data-aos="fade-up" data-aos-delay="200"
+            data-aos-duration="1200" />
+        </div>
+        <input data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500" type="text" placeholder="Subject"
+          class="full-input" required />
+        <textarea placeholder="Message..." data-aos="fade-up" data-aos-delay="200" data-aos-duration="1800"></textarea>
+        <button type="submit" class="subBtn" data-aos="fade-up" data-aos-delay="200" data-aos-duration="2100">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
 
-    <footer></footer>
-    <script src="/script/script.js"></script>
+  <!--footer section starts here-->
+  <footer class="footer">
+    <div class="footer-container">
+      <h2>DegifeT.</h2>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <ul id="footer-navbar">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-    <script>
-      AOS.init();
-    </script>
-  </body>
+      <!--social links-->
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-github"></i><span>Github</span></a>
+        <a href="#"><i class="fab fa-linkedin"></i><span>Linkedin</span></a>
+        <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+        <a href="#"><i class="fab fa-instagram"></i><span>instagram</span></a>
+      </div>
+    </div>
+
+    <p class="footer-copy">
+      &copy; <span id="date"></span> DegifeT. All Rights Reserved.
+    </p>
+  </footer>
+
+  <footer></footer>
+  <script src="/script/script.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
