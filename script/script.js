@@ -51,6 +51,7 @@ function eraseEffect() {
 }
 typeEffect();
 eraseEffect();
+
 //bars sections//
 
 const navbar = document.getElementById("navbar");
@@ -63,7 +64,7 @@ bar.addEventListener("click", () => {
     barHide.classList.remove("fa-bars");
   } else {
     barHide.classList.remove("fa-times");
-    barHide.classList.add("fa-bars");
+    barHide.classList.toggle("fa-bars");
   }
 });
 

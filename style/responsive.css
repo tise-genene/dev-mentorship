@@ -11,14 +11,14 @@ display: block;
 }
  #navbar{
 position: absolute;
-right: -4000px;
+right: 40px;
 width: 30px;
 top: 100px;
 transition: right .3s ease;
 }
 #navbar.showNavbar{
 background-color: #134;
-right: 0;
+right: 380px;
 height: 250px;
 display: flex;
 flex-direction: column;
