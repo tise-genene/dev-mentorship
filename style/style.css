@@ -15,7 +15,7 @@ html::-webkit-scrollbar-thumb {
   background: var(--primary);
 }
 html::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 /* #3b82f6 */
 :root {
@@ -40,7 +40,7 @@ body.dark-mode {
 .section-pad {
   padding: 80px 20px;
 }
-.section-marg {
+.section-marg{
   margin: 40px 10px;
 }
 

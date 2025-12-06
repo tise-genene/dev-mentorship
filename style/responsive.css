@@ -12,14 +12,13 @@ display: block;
  #navbar{
 position: absolute;
 right: -4000px;
-width: 30px;
-top: 100px;
+width: 100%;
 transition: right .3s ease;
 }
 #navbar.showNavbar{
 background-color: #134;
 right: 0;
-height: 250px;
+height: 100vh;
 display: flex;
 flex-direction: column;
 text-align: center;
