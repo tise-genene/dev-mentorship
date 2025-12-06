@@ -50,7 +50,6 @@ function eraseEffect() {
   }
 }
 typeEffect();
-eraseEffect();
 //bars sections//
 
 const navbar = document.getElementById("navbar");
@@ -60,6 +59,7 @@ bar.addEventListener("click", () => {
   navbar.classList.toggle("showNavbar");
   if (navbar.classList.contains("showNavbar")) {
     barHide.classList.toggle("fa-times");
+    barHide.style.color = "red";
     barHide.classList.remove("fa-bars");
   } else {
     barHide.classList.remove("fa-times");
