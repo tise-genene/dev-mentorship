@@ -40,7 +40,7 @@ body.dark-mode {
 .section-pad {
   padding: 80px 20px;
 }
-.section-marg{
+.section-marg {
   margin: 40px 10px;
 }
 
@@ -668,7 +668,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-flow: column;
-  gap: 8px;
+  gap: 4px;
 }
 .footer-container .footer-social a {
   text-decoration: none;
