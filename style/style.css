@@ -391,6 +391,16 @@ header .bars i {
 }
 /* //special skill// */
 
+.Prob-solvingSkill {
+padding: 30px 10px;
+width: 100%;
+max-width: 1200px;
+
+}
+.prob-container {
+
+}
+
 /*skill section ends*/
 
 /* projects section styles*/
