@@ -687,10 +687,9 @@ color: var(--text);
   color: var(--text);
   font-size: 28px;
 }
-.footer-container .footer-social a i:hover{
+.footer-container .footer-social a:hover {
 transform: translateY(-4px);
 transition: .5s;
-cursor: pointer;
 color: var(--primary);
 }
 .footer-container .footer-social span {
@@ -698,7 +697,7 @@ color: var(--primary);
   margin-top: 8px;
   align-items: center;
 }
-.footer-container .footer-social span:hover{
+.footer-container .footer-social span:hover {
 text-decoration: underline;
 }
 footer .footer-copy {
