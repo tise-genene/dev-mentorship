@@ -650,9 +650,9 @@ footer {
   text-wrap: nowrap;
   font-weight: 700;
 }
-.footer-container div h3{
-text-align: center;
-color: var(--text);
+.footer-container div h3 {
+ text-align: center;
+ color: var(--text);
 }
 .footer-container #footer-navbar {
   display: grid;
@@ -687,10 +687,10 @@ color: var(--text);
   color: var(--text);
   font-size: 28px;
 }
-.footer-container .footer-social a:hover {
-transform: translateY(-4px);
-transition: .5s;
-color: var(--primary);
+.footer-container .footer-social a:hover i {
+ transform: translateY(-4px);
+ transition: .5s;
+ color: var(--primary);
 }
 .footer-container .footer-social span {
   color: var(--text);
