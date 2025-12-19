@@ -59,10 +59,11 @@ bar.addEventListener("click", () => {
   navbar.classList.toggle("showNavbar");
   if (navbar.classList.contains("showNavbar")) {
     barHide.classList.toggle("fa-times");
-    barHide.style.color = "red";
+    barHide.classList.add("bar-active");
     barHide.classList.remove("fa-bars");
   } else {
     barHide.classList.remove("fa-times");
+    barHide.classList.remove("bar-active");
     barHide.classList.add("fa-bars");
   }
 });
@@ -72,4 +73,3 @@ bar.addEventListener("click", () => {
 const d = new Date();
 const year = d.getFullYear();
 document.getElementById("date").innerText = year;
-
