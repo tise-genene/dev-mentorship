@@ -50,7 +50,6 @@ function eraseEffect() {
   }
 }
 typeEffect();
-eraseEffect();
 //bars sections//
 
 const navbar = document.getElementById("navbar");
@@ -72,4 +71,3 @@ bar.addEventListener("click", () => {
 const d = new Date();
 const year = d.getFullYear();
 document.getElementById("date").innerText = year;
-

@@ -1,200 +1,203 @@
-
-@media(max-width: 768px) {
-html{
-overflow-x: hidden;
-}
-header{
-justify-content: space-between;
-}
-header .bars{
-display: block;
-}
- #navbar{
-position: absolute;
-right: -4000px;
-width: 100%;
-transition: right .3s ease;
-}
-#navbar.showNavbar{
-background-color: #134;
-right: 0;
-height: 100vh;
-display: flex;
-flex-direction: column;
-text-align: center;
-align-items: center;
-justify-content: center;
-width: 100%;
-top: 70px;
-text-align: center;
-z-index: 999;
-}
-
-/* header nav ul{
-display: flex;
-flex-direction: column;
-gap: 20px;  
-align-items: center; 
-margin-bottom: 12px;
-justify-content: center;
-} */
-/*about me section responsivennes starts*/
-.about-container{
-flex-direction: column;
-text-align: center;
-}
-.about-img img{
-width: 200px; height: 200px;
-}
-.about-text h2{
-font-size: 18px;
-}
-
-
-/* projects responsivennes starts*/
-.projects {
-padding: 40px 10px;
-}
-
-.projects .grid-container{
-display: grid;
-gap: 10px;
-grid-template-columns: 1fr 1fr;
-grid-auto-flow: row;
-grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-}
-
-.projects .grid-container .projects-card img{
-width: 100%;
-height: auto;
-}
-
-/*service section styles*/
-.services{
-padding: 40px 10px;
-}
-.services .service-grid{
-gap: 10px;
-grid-template-columns: 1fr 1fr;
-grid-auto-flow: row;
-grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-}
-
-
- .lang-name, .skill-info{
-max-width: 380px;
-padding: 8px 4px;
-}
-.skill-info i{
-font-size: 20px;
-flex-wrap: nowrap;
-}
-
-
- 
- .lang-name span {
-  font-size: 8px;
-}
-
-/*contact section*/
-.contact-container {
-  
-grid-auto-flow: row;
-grid-template-columns: 1fr;
-
-}
-
-.contact-info h3 {
-text-align: center;
-}
-.contact-form h3{
-text-align: center;
-}
-.contact-form .input-group{
-display: flex; gap: 30px;
-}
-
-.info-link{
-text-align: center;
-}
-
-/* //footer link */
-.footer-container{
- grid-template-columns: 1fr 1fr;
-}
-
-}
-
-
-
-
-
-
-
-@media(max-width: 978px) {
-
-.projects .grid-container{
-display: grid;
-gap: 10px;
-grid-template-columns: 1fr 1fr;
-grid-auto-flow: row;
-grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-}
-
-/*serives section cards*/
-.services .service-grid{
-display: grid;
-gap: 10px;
-grid-template-columns: 1fr 1fr;
-grid-auto-flow: row;
-grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-}
-
-/*animating skill section*/
-.lang-name, .skill-info{
-max-width: 380px;
-padding: 8px 4px;
-}
-.lang-name span {
-  font-size: 8px;
-}
-
-.skill-info i{
-flex-wrap: nowrap;
-font-size: 17px;
-  margin: 0 8px;
-  padding: 4px;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(-200px);
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
   }
-  50% {
-    transform: translateX(200px);
+  header {
+    justify-content: space-between;
   }
-  100% {
-    transform: translateX(-200px);
+  header .logo {
+    position: absolute;
+    right: 60px;
+  }
+  header .bars {
+    display: block;
+    position: absolute;
+    left: 20px;
+    z-index: 999;
+  }
+  #navbar {
+    position: fixed;
+    background: var(--bg);
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    left: -3000px;
+    top: 0;
+    padding: 80px 0 10px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+  }
+  #navbar.showNavbar {
+    left: 0;
+  }
+  header nav ul li a:hover {
+    color: #190;
+  }
+
+  /*hero-sections*/
+  .hero {
+    padding: 70px 10px;
+    height: 100vh;
+  }
+
+  /*about me section responsivennes starts*/
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-img img {
+    width: 200px;
+    height: 200px;
+  }
+  .about-text h2 {
+    font-size: 18px;
+  }
+
+  /* projects responsivennes starts*/
+  .projects {
+    padding: 40px 10px;
+  }
+
+  .projects .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+
+  .projects .grid-container .projects-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*service section styles*/
+  .services {
+    padding: 40px 10px;
+  }
+  .services .service-grid {
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .lang-name,
+  .skill-info {
+    max-width: 380px;
+    padding: 8px 4px;
+  }
+  .skill-info i {
+    font-size: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .lang-name span {
+    font-size: 8px;
+  }
+
+  /*contact section*/
+  .contact-container {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info h3 {
+    text-align: center;
+  }
+  .contact-form h3 {
+    text-align: center;
+  }
+  .contact-form .input-group {
+    display: flex;
+    gap: 30px;
+  }
+
+  .info-link {
+    text-align: center;
+  }
+
+  /* //footer link */
+  .footer-container #footer-navbar {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 12px;
+    grid-auto-flow: row;
+  }
+  .footer-container .footer-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 12px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
-/*contact section*/
-.contact-container {
-  
-grid-auto-flow: row;
-grid-template-columns: 1fr;
 
-}
-.contact-info h3 {
-text-align: center;
-}
-.contact-form h3{
-text-align: center;
-}
-.contact-form .input-group{
-flex-direction: column;
-}
-.info-link{
-text-align: center;
-}
+@media (max-width: 978px) {
+  .projects .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
 
+  /*services section cards*/
+  .services .service-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+
+  /*animating skill section*/
+  .lang-name,
+  .skill-info {
+    max-width: 380px;
+    padding: 8px 4px;
+  }
+  .lang-name span {
+    font-size: 8px;
+  }
+
+  .skill-info i {
+    flex-wrap: nowrap;
+    font-size: 17px;
+    margin: 0 8px;
+    padding: 4px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(-200px);
+    }
+    50% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(-200px);
+    }
+  }
+  /*contact section*/
+  .contact-container {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-info h3 {
+    text-align: center;
+  }
+  .contact-form h3 {
+    text-align: center;
+  }
+  .contact-form .input-group {
+    flex-direction: column;
+  }
+  .info-link {
+    text-align: center;
+  }
 }
