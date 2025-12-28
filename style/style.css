@@ -40,7 +40,7 @@ body.dark-mode {
 .section-pad {
   padding: 80px 20px;
 }
-.section-marg{
+.section-marg {
   margin: 40px 10px;
 }
 
@@ -316,8 +316,7 @@ header .bars i {
 
 .mySpecial {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-column: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 .myskills {
   padding: 60px 10px;
@@ -414,12 +413,11 @@ header .bars i {
 .projects .grid-container .projects-card {
   padding: 10px 8px;
   border-radius: 12px;
-  background: var(--secondary);
+  background: var(--card);
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   justify-content: center;
-  background: var(--card);
   border: 1px solid var(--primary);
   transition: 0.4s all ease;
 }
@@ -495,7 +493,7 @@ header .bars i {
 .services .service-grid .services-card {
   padding: 22px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-  border: 1px solid red;
+  border: 1px solid var(--primary);
   background: var(--card);
   display: flex;
   align-items: center;
@@ -600,7 +598,6 @@ header .bars i {
   width: 100%;
   padding: 15px 6px;
   outline: none;
-  gap: 10px;
   border-radius: 12px;
   border: 1px solid var(--primary);
   font-size: 17px;
@@ -647,12 +644,12 @@ footer {
 }
 .footer-container h2 {
   color: var(--text);
-  text-wrap: nowrap;
+  white-space: nowrap;
   font-weight: 700;
 }
 .footer-container div h3 {
- text-align: center;
- color: var(--text);
+  text-align: center;
+  color: var(--text);
 }
 .footer-container #footer-navbar {
   display: grid;
@@ -688,9 +685,9 @@ footer {
   font-size: 28px;
 }
 .footer-container .footer-social a:hover i {
- transform: translateY(-4px);
- transition: .5s;
- color: var(--primary);
+  transform: translateY(-4px);
+  transition: 0.5s;
+  color: var(--primary);
 }
 .footer-container .footer-social span {
   color: var(--text);
@@ -698,7 +695,7 @@ footer {
   align-items: center;
 }
 .footer-container .footer-social span:hover {
- text-decoration: underline;
+  text-decoration: underline;
 }
 footer .footer-copy {
   text-align: center;
