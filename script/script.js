@@ -59,11 +59,9 @@ bar.addEventListener("click", () => {
   navbar.classList.toggle("showNavbar");
   if (navbar.classList.contains("showNavbar")) {
     barHide.classList.toggle("fa-times");
-    barHide.classList.add("bar-active");
     barHide.classList.remove("fa-bars");
   } else {
     barHide.classList.remove("fa-times");
-    barHide.classList.remove("bar-active");
     barHide.classList.add("fa-bars");
   }
 });
