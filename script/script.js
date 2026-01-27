@@ -71,3 +71,44 @@ bar.addEventListener("click", () => {
 const d = new Date();
 const year = d.getFullYear();
 document.getElementById("date").innerText = year;
+
+
+
+//skill bar animation//
+
+  const circles = document.querySelectorAll(".progress");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+
+        const circle = entry.target;
+        const percent = circle.getAttribute("data-percent");
+        const radius = circle.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+
+        const offset = circumference - (percent / 100) * circumference;
+
+        circle.style.strokeDashoffset = offset;
+
+        // count up
+        let count = 0;
+        const counter = circle.closest(".circle-wrap")
+                              .querySelector(".skill-count");
+
+        const interval = setInterval(() => {
+          if (count >= percent) {
+            count = percent;
+            clearInterval(interval);
+          }
+          counter.textContent = count + "%";
+          count++;
+        }, 20);
+
+        observer.unobserve(circle);
+      }
+    });
+  }, { threshold: 0.6 });
+
+  circles.forEach(circle => observer.observe(circle));
+
